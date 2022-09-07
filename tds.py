@@ -7,4 +7,4 @@ while (True):
     id_like = get['id']
     làm_nv=requests.post('https://graph.facebook.com/'+str(id_like)+'/subscribers?access_token='+token_fb)
     done_like=requests.get('https://traodoisub.com/api/coin/?type=FOLLOW&id='+str(id_like)+'&access_token='+token_tds).json()
-    print ("""Fore.BLUE""") (done_like)
+    print (done_like)
